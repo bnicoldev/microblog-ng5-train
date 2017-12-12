@@ -16,8 +16,7 @@ export class MessageInputComponent implements OnInit {
   }
 
   addMessage(content: any): void {
-      this.textMessage = content.value;
-      console.log(this.textMessage);
+    console.log(this.textMessage);
   }
 
 
