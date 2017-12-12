@@ -46,13 +46,13 @@ describe ('#ngOnInit', () =>  {
         expect(component.messages).toBeTruthy();
       });
 
-      it('should contain a messages Array with at least 4 elements',() => {
+      it('should contain a messages Array with at least 1 elements',() => {
         // given
         component.messages = undefined;
         // when
         component.ngOnInit();
         // then
-        expect(component.messages.length).toBeGreaterThan(4);
+        expect(component.messages.length).toBeGreaterThan(1);
       });
 
 

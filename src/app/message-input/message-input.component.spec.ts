@@ -25,8 +25,8 @@ describe('MessageInputComponent', () => {
     expect(component).toBeTruthy(); 
   });
 
-  xdescribe('#addMessage',()=>{
-    it('should set textMessage property', () => {
+  describe('#addMessage',()=>{
+    xit('should set textMessage property', () => {
       //given
       component.textMessage = undefined;
       //when
