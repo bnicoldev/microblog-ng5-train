@@ -5,6 +5,7 @@ import { MessageListComponent } from './message-list/message-list.component';
 import { MessagesComponent } from './message-list/messages/messages.component';
 import { MessageInputComponent } from './message-input/message-input.component';
 import { FormsModule } from '@angular/forms';
+import { MessageStoreService } from './shared/message-store.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -19,6 +20,7 @@ describe('AppComponent', () => {
         MessagesComponent,
         MessageInputComponent
       ],
+      providers: [MessageStoreService]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
@@ -30,6 +32,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to our new microblog!');
+    expect(compiled.querySelector('h1').textContent).toContain('Microblog!');
   }));
 });

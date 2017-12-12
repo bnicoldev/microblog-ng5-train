@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MessageInputComponent } from './message-input.component';
 import { FormsModule } from '@angular/forms';
+import { MessageStoreService } from '../shared/message-store.service';
 
 describe('MessageInputComponent', () => {
   let component: MessageInputComponent;
@@ -10,7 +11,8 @@ describe('MessageInputComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports:[FormsModule],
-      declarations: [MessageInputComponent ]
+      declarations: [MessageInputComponent ],
+      providers: [MessageStoreService]
     })
     .compileComponents();
   }));
@@ -30,7 +32,7 @@ describe('MessageInputComponent', () => {
       //given
       component.textMessage = undefined;
       //when
-      component.addMessage({value:'mon nouveau message'});
+      component.addMessage({content:'mon nouveau message'});
       //then
       expect(component.textMessage).toEqual('mon nouveau message');
 
