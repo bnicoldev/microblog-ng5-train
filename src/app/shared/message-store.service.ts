@@ -5,7 +5,7 @@ import { Message } from './message';
 @Injectable()
 export class MessageStoreService {
 
-  messages: Array<Message>;
+  messages: Array<Message> = [];
 
   // private declare implicitement l'attribut en local 
   constructor() { 

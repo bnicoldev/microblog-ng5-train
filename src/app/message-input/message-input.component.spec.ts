@@ -27,17 +27,5 @@ describe('MessageInputComponent', () => {
     expect(component).toBeTruthy(); 
   });
 
-  describe('#addMessage',()=>{
-    xit('should set textMessage property', () => {
-      //given
-      component.textMessage = undefined;
-      //when
-      component.addMessage({content:'mon nouveau message'});
-      //then
-      expect(component.textMessage).toEqual('mon nouveau message');
-
-    });
-    
-  });
 
 });
