@@ -4,12 +4,14 @@ import { AppComponent } from './app.component';
 import { MessageListComponent } from './message-list/message-list.component';
 import { MessagesComponent } from './message-list/messages/messages.component';
 import { MessageInputComponent } from './message-input/message-input.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        FormsModule
       ],
       declarations: [
         AppComponent,
