@@ -2,6 +2,6 @@
 <li class="message-list__li">
   <div class="message-item">
       <span class="message-item__author">{{message.author}}</span>
-      <span class="message-item__content">{{message.createdAt | date}} - {{message.content}}</span>
+      <span class="message-item__content">{{message.createdAt | date:'medium'}} - {{message.content}}</span>
   </div>
 </li>

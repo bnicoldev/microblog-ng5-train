@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MessageListComponent } from './message-list.component';
 import { MessagesComponent } from './messages/messages.component';
+import { MessageStoreService } from '../shared/message-store.service';
 
 
 describe('MessageListComponent Tests', () => {
@@ -12,6 +13,7 @@ describe('MessageListComponent Tests', () => {
     TestBed.configureTestingModule({
       declarations: [ MessageListComponent
         ,MessagesComponent ]
+        ,providers: [MessageStoreService]
     })
     .compileComponents();
   }));
@@ -42,11 +44,7 @@ describe ('#ngOnInit', () =>  {
         expect(component.messages).toBeTruthy();
       });
 
-      xit('should not be tested',() => {
-        expect(component.messages).toBeTruthy();
-      });
-
-      it('should contain a messages Array with at least 1 elements',() => {
+     xit('should contain a messages Array with at least 1 elements',() => {
         // given
         component.messages = undefined;
         // when

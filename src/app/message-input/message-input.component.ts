@@ -4,7 +4,7 @@ import { MessageStoreService } from '../shared/message-store.service';
 @Component({
   selector: 'mcb-message-input',
   templateUrl: './message-input.component.html',
-  styles: []  
+  styles: [] 
 
 })
 export class MessageInputComponent implements OnInit {
@@ -16,12 +16,14 @@ export class MessageInputComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.textMessage = '';
   }
 
   addMessage(): void {
     this.messageStoreService.addMessage({
       author:'Hulk',
-      content:this.textMessage
+      content:this.textMessage,
+      createdAt: new Date()
     });
   }
 
