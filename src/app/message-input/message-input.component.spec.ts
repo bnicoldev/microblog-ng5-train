@@ -21,7 +21,8 @@ describe('MessageInputComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MessageInputComponent);
     component = fixture.componentInstance;
-    svc = fixture.debugElement.injector.get(MessageStoreService);
+    //svc = fixture.debugElement.injector.get(MessageStoreService);
+    svc = TestBed.get(MessageStoreService); //autre methode
     fixture.detectChanges();
   });
 
