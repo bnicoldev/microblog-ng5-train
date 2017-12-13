@@ -9,7 +9,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Git
 
 Run `git status` to see Git repo status  
-Run `git log --oneline` to see commits log
+Run `git log --oneline` to see commits log  
+git stash  
+git pull  
+git checkout 572f336  
+git checkout -b ng5-microblog-2  
+
+
 
 ## Code scaffolding
 
