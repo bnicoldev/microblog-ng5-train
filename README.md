@@ -31,7 +31,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.   
+Exemples:   
+ng serve -> build pour dev avec un vendor.bundle.js de 10 Mo  
+deploiement avec firebase ? (dans les devDependencies)   
+ng build -> vendor.bundle de 3.5 Mo  
+ng build --prod -> presque moins d'1 Mo pour la totalité des fichiers, dont un (main) de 650Ko  
 
 ## Running unit tests
 
