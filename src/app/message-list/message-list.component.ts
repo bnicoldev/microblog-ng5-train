@@ -15,7 +15,7 @@ export class MessageListComponent implements OnInit {
   constructor(private msgSrv: MessageStoreService) { }
 
   ngOnInit() {   
-    this.messages = this.msgSrv.messageStore;
+    this.messages = this.msgSrv.getMessages();
   }
 
 

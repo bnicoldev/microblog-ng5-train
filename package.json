@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --browsers=ChromeHeadless",
+    "test:IE": "ng test --browsers=IE....",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
