@@ -3,10 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
 Installation from scratch:  
-1. installation nodejs (npm included)
-2. installation git bash
-3. recuperation d'un repo git
-4. npm install -g @angular/cli
+1. installation nodejs (npm included) `https://nodejs.org/en/` 
+2. installation git bash `https://git-for-windows.github.io/`
+3. recuperation d'un repo git 
+4. npm install -g @angular/cli (utilisation command line)
 
 
 ## Development server
