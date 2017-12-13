@@ -14,7 +14,7 @@ export class MessageStoreService {
   }
 
   addMessage(msg: Message): void {
-    if (this.messageStore.length > 5)
+    if (this.messageStore.length > 3)
       this.messageStore.shift();
     this.messageStore.push(msg);
   }

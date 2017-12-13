@@ -25,6 +25,7 @@ export class MessageInputComponent implements OnInit {
       content:this.textMessage,
       createdAt: new Date()
     });
+    this.textMessage = '';
   }
 
 

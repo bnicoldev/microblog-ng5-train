@@ -12,16 +12,18 @@ describe('MessageStoreService', () => {
     expect(service).toBeTruthy();
   }));
 
-  xdescribe('#addMessage',()=>{
-    xit('should set textMessage property', () => {
+  describe('#addMessage', inject([MessageStoreService], (service: MessageStoreService)=>{
+    it('should add 1 message to the messages array', inject([MessageStoreService]
+        , (service: MessageStoreService) => {
       //given
-     
+      let nb = service.messageStore.length;
       //when
-      
+      service.addMessage({author:'test',content:'test'});
+      let nbafter = service.messageStore.length;
       //then
-     
+     expect(nbafter).toEqual(nb + 1);
 
-    });
+    }));
     
-  });
+  }));
 });
