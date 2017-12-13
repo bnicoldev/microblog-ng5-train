@@ -5,8 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Installation from scratch:  
 1. installation **nodejs** (npm included) `https://nodejs.org/en/` 
 2. installation **git bash** `https://git-for-windows.github.io/`
-3. npm install -g @angular/cli (utilisation command line)
-4. ng new newproject --routing=true --prefix=mypfx --inline-style=true (pour utiliser son propre css)
+3. installation vs code (extensions AngularFiles,Angular Language Service,Angular v5 snippets)
+4. npm install -g @angular/cli (utilisation command line)
+5. ng new newproject --routing=true --prefix=mypfx --inline-style=true (pour utiliser son propre css)
 
 ## Development server
 
